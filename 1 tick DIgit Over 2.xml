@@ -37,7 +37,7 @@
                 <field name="VAR" id="KaO9g@ULafq66uv?o*cA" variabletype="">Win Amount</field>
                 <value name="VALUE">
                   <block type="math_number" id="U(A|/.):^}Xem$3N6yVE">
-                    <field name="NUM">0.35</field>
+                    <field name="NUM">0.30</field>
                   </block>
                 </value>
                 <next>
@@ -45,7 +45,7 @@
                     <field name="VAR" id="gsQah}04l(VNTYJ`*;{Y" variabletype="">Initial Amount</field>
                     <value name="VALUE">
                       <block type="math_number" id="QqQ.fEpxzaqGC1Ub[TSh">
-                        <field name="NUM">0.35</field>
+                        <field name="NUM">0.30</field>
                       </block>
                     </value>
                   </block>
@@ -62,7 +62,7 @@
         <field name="CURRENCY_LIST">USD</field>
         <value name="DURATION">
           <block type="math_number" id="lMu!1pNuV]HE6{eqg5)]">
-            <field name="NUM">1</field>
+            <field name="NUM">0.2</field>
           </block>
         </value>
         <value name="AMOUNT">
@@ -113,7 +113,7 @@
   <block type="after_purchase" id="finish" x="-227" y="297">
     <statement name="AFTERPURCHASE_STACK">
       <block type="controls_if" id="QltG0{H{UeY@Y`z^.qYT">
-        <mutation else="1"></mutation>
+        <mutation else="0.2"></mutation>
         <value name="IF0">
           <block type="contract_check_result" id="H}Z#Q6lNiFBM=MtP.kM`">
             <field name="CHECK_RESULT">loss</field>
@@ -121,7 +121,7 @@
         </value>
         <statement name="DO0">
           <block type="controls_if" id="y7Jc`]2f(QvQ_L/GUr|R">
-            <mutation else="1"></mutation>
+            <mutation else="0.2"></mutation>
             <value name="IF0">
               <block type="logic_compare" id=";Wuq?-=q3y+u}-eq]*(@">
                 <field name="OP">EQ</field>
